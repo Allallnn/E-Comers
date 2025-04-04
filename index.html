@@ -3,47 +3,78 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <div id="nav-div-1">
-        <p id="p-1">sneakers</p>
-        <div id="nav-div-2">
-          <nav>
-            <p>Collections</p>
-            <p>Men</p>
-            <p>Women</p>
-            <p>About</p>
-            <p>Contact</p>
+    <!-- navigation links -->
+    <nav class="nav">
+      <div id="nav-div-2">
+      <h1 id="company-name">sneakers</h1>
+      <div class="nav-links">
+        <p>Collections</p>
+        <p>Men</p>
+        <p>Women</p>
+        <p>About</p>
+        <p>Contact</p>
+      </div>        
       </div>
 
-    <div id="nav-div-3">
-      <img src="assets/icon-cart.svg" alt="icon-cart" id="icon-cart">
-      <img src="assets/Image20250401171147.png" alt="man-img" id="man-img">
-    </div>
-  </nav>
-</div>
+      <div class="nav-div">
+        <img src="assets/icon-cart.svg" alt="cart-icon" id="cart-icon" />
+        <img src="assets/Image20250401171147.png" alt="man-img" id="man-img" />
+      </div>
+    </nav>
+    <hr />
+    <!-- Main -->
+    <section class="main">
+      <div class="main-flex">
+        <!-- Left (imgs)-->
+        <div class="left-section">
+          <div class="main-img">
+            <img src="assets/Image20250401171217.jpg" alt="big-img" />
+          </div>
+          <div class="main-img-div">
+            <img src="assets/Image20250401171217.jpg" alt="small-img" />
+            <img src="assets/Image20250401171210.jpg" alt="shoe-stick" />
+            <img src="assets/Image20250401171214.jpg" alt="shoe-rock-1" />
+            <img src="assets/Image20250401171212.jpg" alt="shoe-rock-2" />
+          </div>
+        </div>
 
-    </header>
-    <hr>
-    <main>
-      <!-- section 1 -->
-      <section id="section-1">
-        <div id="main-div-1">
-          <img src="assets/Image20250401171217.jpg" alt="main-img">
+        <!-- Right (text area) -->
+        <div class="right-section">
+          <p class="company-name">Sneaker Company</p>
+          <h1 class="title">Fall Limited Edition Sneakers</h1>
+          <p class="description">
+            These low-profile sneakers are your perfect casual wear companion.
+            Featuring a durable rubber outer sole, they'll withstand everything
+            the weather can offer.
+          </p>
+
+          <!-- price stuff -->
+          <div class="price-container">
+            <span id="price-now">$125.00</span>
+            <span id="discount-span">50%</span>
+          </div>
+
+          <div class="og-price">$250.00</div>
+
+          <!-- right bottom (quantity and button) -->
+          <div class="right-bottom">
+            <div class="quantity-div">
+              <img src="assets/icon-minus.svg" alt="minus-icon" />
+              <span id="quantity">0</span>
+              <img src="assets/icon-plus.svg" alt="plus-icon" />
+            </div>
+            <div class="quantity-button">
+              <button>
+                <img src="assets/icon-cart.svg" alt="icon-cart" />Add to cart
+              </button>
+            </div>
+          </div>
         </div>
-        <div id="main-div-2">
-<img src="assets/Image20250401171217.jpg" alt="img-1">
-<img src="assets/Image20250401171210.jpg" alt="img-2">
-<img src="assets/Image20250401171214.jpg" alt="img-3">
-<img src="assets/Image20250401171223.jpg" alt="img-4">
-        </div>
-      </section>
-      <!-- section 2 -->
-      <section id="section-2"></section>
-    </main>
+      </div>
+    </section>
   </body>
 </html>
