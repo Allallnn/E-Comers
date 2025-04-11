@@ -1,41 +1,45 @@
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Kumbh+Sans:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Kumbh+Sans:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
-:root{
---Orange: hsl(26, 100%, 55%);
---Pale-orange: hsl(25, 100%, 94%);
---Very-dark-blue: hsl(220, 13%, 13%);
---Dark-grayish-blue: hsl(219, 9%, 45%);
---Grayish-blue: hsl(220, 14%, 75%);
---Light-grayish-blue: hsl(223, 64%, 98%);
---White: hsl(0, 0%, 100%);
---Black: hsl(0, 0%, 0%);
---ff-Kumbh-Sans: "Kumbh-Sans", "Sans seriff";
+:root {
+  --Orange: hsl(26, 100%, 55%);
+  --Pale-orange: hsl(25, 100%, 94%);
+  --Very-dark-blue: hsl(220, 13%, 13%);
+  --Dark-grayish-blue: hsl(219, 9%, 45%);
+  --Grayish-blue: hsl(220, 14%, 75%);
+  --Light-grayish-blue: hsl(223, 64%, 98%);
+  --White: hsl(0, 0%, 100%);
+  --Black: hsl(0, 0%, 0%);
+  --ff-Kumbh-Sans: "Kumbh-Sans", "Sans seriff";
 }
-body{
+body {
   font-family: var(--ff-Kumbh-Sans);
   height: 100vh;
- 
 }
 /* Nav */
 nav {
   display: flex;
   padding: 1rem 10%;
-  justify-content: space-between;  
-  align-items: center;  
+  justify-content: space-between;
+  align-items: center;
+}
+#nav-div-2 img {
+  display: none;
 }
 
-nav h1{
+nav h1 {
   font-size: 30px;
 }
-
+#icon-menu {
+  display: none;
+}
 .nav-links {
   display: flex;
-  align-items: center; 
+  align-items: center;
 }
 
 .nav-links p {
@@ -46,27 +50,26 @@ nav h1{
 
 .nav-div {
   display: flex;
-  align-items: center; 
-  gap: 3rem; 
+  align-items: center;
+  gap: 3rem;
 }
 
 #cart-icon {
   width: 2rem;
-  height: 2rem; 
+  height: 2rem;
   cursor: pointer;
 }
 
 #man-img {
   width: 3rem;
   height: 3rem;
-  border-radius: 50%; 
-
+  border-radius: 50%;
 }
 
 hr {
-margin: 0 auto;
-width: 80%;
-opacity: 50%;
+  margin: 0 auto;
+  width: 80%;
+  opacity: 50%;
 }
 
 /* Main Section */
@@ -75,17 +78,16 @@ opacity: 50%;
   display: flex;
   flex-direction: row;
   justify-content: center;
-align-items: center;
-  gap: 80px;
+  align-items: center;
 }
-.main-flex{
+.main-flex {
   display: flex;
-flex-direction: row;
-gap: 10rem;
+  flex-direction: row;
+  gap: 10rem;
   align-items: center;
   justify-content: center;
 }
-#nav-div-2{
+#nav-div-2 {
   display: flex;
   gap: 3rem;
   align-items: center;
@@ -101,36 +103,35 @@ gap: 10rem;
 .main-img {
   display: flex;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
   width: 100%;
 }
 
 .main-img img {
   width: 100%;
-  max-width: 400px; 
-  height: auto; 
+  max-width: 400px;
+  height: auto;
   object-fit: cover;
-  border-radius: 10px; 
+  border-radius: 10px;
 }
 
 .main-img-div {
   display: flex;
-  justify-content: center; 
-  gap: 40px; 
-  margin-top: 25px; 
+  justify-content: center;
+  gap: 40px;
+  margin-top: 25px;
 }
 
-
 .main-img-div img {
-  width: 70px; 
-  height: 70px; 
-  border-radius: 10px; 
+  width: 70px;
+  height: 70px;
+  border-radius: 10px;
   border: 2px solid transparent;
   cursor: pointer;
 }
 
 .main-img-div img:hover {
-  border-color: var(--Orange); 
+  border-color: var(--Orange);
 }
 
 /* Right section */
@@ -142,7 +143,7 @@ gap: 10rem;
 }
 
 /* Company Name */
-.company-name {
+.company-name-2 {
   font-size: 12px;
   color: var(--Dark-grayish-blue);
   text-transform: uppercase;
@@ -212,15 +213,13 @@ gap: 10rem;
 
 #quantity {
   display: flex;
-justify-content: center;
+  justify-content: center;
   font-size: 16px;
   font-weight: 700;
   width: 8rem;
 }
 
-.quantity-button {
-  margin-left: 15px;
-}
+
 
 .quantity-button button {
   display: flex;
@@ -245,8 +244,146 @@ justify-content: center;
 .quantity-button button:hover {
   background-color: var(--Orange);
 }
-.right-bottom{
+.right-bottom {
   display: flex;
+  gap: 15px;
 }
-/* text */
 
+@media (max-width: 425px) {
+  body {
+    overflow-x: hidden;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  nav {
+    padding: 1rem;
+  }
+  .nav-div {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+  #company-name {
+  }
+  #nav-div-2 {
+  }
+  #nav-div-2 img {
+    display: block;
+    width: 1rem;
+    height: 1rem;
+  }
+
+  #previous-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: absolute;
+    left: 1rem;
+    padding: 1rem;
+    background-color: var(--White);
+  }
+  #next-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: absolute;
+    right: 1rem;
+    padding: 1rem;
+    background-color: var(--White);
+  }
+.main-img {
+  position: relative;
+}
+  #cart-icon {
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+  }
+
+  #man-img {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+  }
+
+  .nav-links p {
+    display: none;
+  }
+
+  #icon-menu {
+    display: block;
+  }
+  /* .main-img{
+  max-width: 100%;
+}
+.main-img img {
+  max-width: 90%;
+} */
+  hr {
+    display: none;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+
+  .main-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .main-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+    object-fit: cover;
+  }
+
+  .main-img-div img {
+    display: none;
+  }
+
+  .right-section {
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  .right-bottom {
+    /* border: 1px solid red; */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+  }
+
+  .quantity-div {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Light-grayish-blue);
+    border-radius: 8px;
+    width: 90%;
+  }
+.quantity-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid red; */
+width: 100%;
+}
+  .quantity-button button {
+    margin-bottom: 1rem;
+    width: 100%;
+  }
+  .quantity-div img {
+    width: 15px;
+  }
+}
